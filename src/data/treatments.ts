@@ -1,3 +1,5 @@
+import metamericoImage from '../assets/images/metamerico_essence_1793909667023.jpg';
+
 export interface Treatment {
   id: string;
   name: string;
@@ -41,7 +43,7 @@ export const TREATMENTS: Treatment[] = [
     benefits: ['Riequilibrio del sistema neurovegetativo', 'Agisce sulle somatizzazioni emotive', 'Armonia globale tra corpo e mente'],
     recommendedFor: 'Stress accumulato, insonnia, ansia e stanchezza cronica',
     durationNote: 'Riflessologico & Olistico',
-    image: 'https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=800&q=80',
+    image: metamericoImage,
     category: 'olistico'
   },
   {
