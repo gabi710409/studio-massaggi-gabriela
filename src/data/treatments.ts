@@ -1,6 +1,6 @@
 import svedeseImage from '../assets/images/svedese_female_therapist_1793910089945.jpg';
 import decontratturanteImage from '../assets/images/decontratturante_female_1793910103766.jpg';
-import metamericoImage from '../assets/images/metamerico_essence_1793909667023.jpg';
+import metamericoImage from '../assets/images/metamerico_dermalgie_1793913631817.jpg';
 import bambooImage from '../assets/images/bamboo_massage_sticks_1793909771987.jpg';
 import legnoterapiaImage from '../assets/images/maderoterapia_only_tools_1793910791088.jpg';
 import coppettazioneImage from '../assets/images/coppette_ventuse_variety_1793910188305.jpg';
