@@ -1,4 +1,5 @@
 import metamericoImage from '../assets/images/metamerico_essence_1793909667023.jpg';
+import bambooImage from '../assets/images/bamboo_massage_sticks_1793909771987.jpg';
 
 export interface Treatment {
   id: string;
@@ -54,7 +55,7 @@ export const TREATMENTS: Treatment[] = [
     benefits: ['Drenaggio linfatico profondo', 'Tonifica i tessuti e modella la silhouette', 'Effetto energizzante e decontratturante'],
     recommendedFor: 'Gambe pesanti, ritenzione idrica e rimodellamento corpo',
     durationNote: 'Dinamico & Rivitalizzante',
-    image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80',
+    image: bambooImage,
     category: 'drenante'
   },
   {
