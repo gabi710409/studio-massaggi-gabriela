@@ -1,0 +1,6 @@
+{
+  "name": "Studio Massaggi Gabriela – Armonia & Benessere",
+  "description": "Massaggi personalizzati per ritrovare equilibrio, leggerezza e relax profondo. Trattamenti in studio e a domicilio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
