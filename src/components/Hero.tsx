@@ -10,6 +10,7 @@ import {
   CheckCircle2
 } from 'lucide-react';
 import { StudioInfo } from '../data/treatments';
+import heroImage from '../assets/images/hero_female_massage_1793910148106.jpg';
 
 interface HeroProps {
   studioInfo: StudioInfo;
@@ -106,7 +107,7 @@ export const Hero: React.FC<HeroProps> = ({ studioInfo, onOpenAnamnesis }) => {
               {/* Main image container */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] bg-stone-100">
                 <img
-                  src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1000&q=85"
+                  src={heroImage}
                   alt="Trattamento massaggio professionale studio Gabriela"
                   className="w-full h-full object-cover object-center"
                 />

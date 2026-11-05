@@ -1,6 +1,10 @@
+import svedeseImage from '../assets/images/svedese_female_therapist_1793910089945.jpg';
+import decontratturanteImage from '../assets/images/decontratturante_female_1793910103766.jpg';
 import metamericoImage from '../assets/images/metamerico_essence_1793909667023.jpg';
 import bambooImage from '../assets/images/bamboo_massage_sticks_1793909771987.jpg';
 import legnoterapiaImage from '../assets/images/maderoterapia_tools_1793909958433.jpg';
+import coppettazioneImage from '../assets/images/coppette_ventuse_variety_1793910188305.jpg';
+import linfodrenaggioImage from '../assets/images/linfodrenaggio_female_1793910134027.jpg';
 
 export interface Treatment {
   id: string;
@@ -23,7 +27,7 @@ export const TREATMENTS: Treatment[] = [
     benefits: ['Scioglie lo stress quotidiano', 'Migliora la circolazione sanguigna', 'Restituisce flessibilità ed elasticità'],
     recommendedFor: 'Chi cerca relax profondo e leggerezza muscolare generale',
     durationNote: 'Personalizzabile (solitamente 50-60 min)',
-    image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80',
+    image: svedeseImage,
     category: 'relax'
   },
   {
@@ -34,7 +38,7 @@ export const TREATMENTS: Treatment[] = [
     benefits: ['Scioglie contratture e nodi muscolari', 'Sollievo zona cervicale, spalle e schiena', 'Correzione delle tensioni da posture scorrette'],
     recommendedFor: 'Tensioni da postura, smart working, sportivi o dolori cervicali e lombari',
     durationNote: 'Profondo e mirato',
-    image: 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80',
+    image: decontratturanteImage,
     category: 'terapeutico'
   },
   {
@@ -78,7 +82,7 @@ export const TREATMENTS: Treatment[] = [
     benefits: ['Effetto sottovuoto rigenerante', 'Massima ossigenazione delle fasce muscolari', 'Accelera il recupero e scioglie aderenze'],
     recommendedFor: 'Tensioni ostinate, sportivi e circolazione rallentata',
     durationNote: 'Tecnica Tradizionale Olistica',
-    image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80',
+    image: coppettazioneImage,
     category: 'terapeutico'
   },
   {
@@ -89,7 +93,7 @@ export const TREATMENTS: Treatment[] = [
     benefits: ['Riduce il gonfiore alle gambe e caviglie', 'Elimina liquidi in eccesso e tossine', 'Effetto rigenerante, rilassante e detossinante'],
     recommendedFor: 'Ritenzione idrica, gambe pesanti, gravidanza (se consentita), post-viaggio',
     durationNote: 'Delicato & Rigenerante',
-    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80',
+    image: linfodrenaggioImage,
     category: 'drenante'
   }
 ];
