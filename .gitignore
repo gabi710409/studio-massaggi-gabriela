@@ -8,4 +8,5 @@ coverage/
 !.env.example
 .dev.pid
 *.zip
+public/assets/aistudio/
 
