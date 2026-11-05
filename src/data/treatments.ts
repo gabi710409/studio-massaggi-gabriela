@@ -4,7 +4,7 @@ import metamericoImage from '../assets/images/metamerico_essence_1793909667023.j
 import bambooImage from '../assets/images/bamboo_massage_sticks_1793909771987.jpg';
 import legnoterapiaImage from '../assets/images/maderoterapia_tools_1793909958433.jpg';
 import coppettazioneImage from '../assets/images/coppette_ventuse_variety_1793910188305.jpg';
-import linfodrenaggioImage from '../assets/images/linfodrenaggio_female_1793910134027.jpg';
+import linfodrenaggioImage from '../assets/images/linfodrenaggio_single_female_1793910421876.jpg';
 
 export interface Treatment {
   id: string;
