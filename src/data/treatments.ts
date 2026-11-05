@@ -1,5 +1,6 @@
 import metamericoImage from '../assets/images/metamerico_essence_1793909667023.jpg';
 import bambooImage from '../assets/images/bamboo_massage_sticks_1793909771987.jpg';
+import legnoterapiaImage from '../assets/images/maderoterapia_tools_1793909958433.jpg';
 
 export interface Treatment {
   id: string;
@@ -66,7 +67,7 @@ export const TREATMENTS: Treatment[] = [
     benefits: ['Combatte la ritenzione idrica', 'Stimola la produzione di collagene ed elastina', 'Immediata sensazione di leggerezza e vitalità'],
     recommendedFor: 'Rimodellamento naturale, gambe stanche e drenaggio',
     durationNote: 'Naturale al 100%',
-    image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80',
+    image: legnoterapiaImage,
     category: 'drenante'
   },
   {
