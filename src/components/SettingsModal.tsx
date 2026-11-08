@@ -101,7 +101,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               type="text"
               value={formData.homeVisits}
               onChange={(e) => setFormData({...formData, homeVisits: e.target.value})}
-              placeholder="Es. Roma e zone limitrofe su richiesta"
+              placeholder="Es. Roma"
               className="w-full px-3 py-2 text-sm rounded-lg border border-stone-300 focus:ring-2 focus:ring-[#5A7862] bg-white"
             />
           </div>

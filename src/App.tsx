@@ -22,6 +22,8 @@ export default function App() {
         }
         if (!parsed.address || parsed.address.includes('Milano')) {
           parsed.address = DEFAULT_STUDIO_INFO.address;
+        }
+        if (!parsed.homeVisits || parsed.homeVisits.includes('Milano') || parsed.homeVisits.includes('limitrofe')) {
           parsed.homeVisits = DEFAULT_STUDIO_INFO.homeVisits;
         }
         localStorage.setItem('gabriela_studio_info', JSON.stringify(parsed));
