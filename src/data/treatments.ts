@@ -109,10 +109,10 @@ export interface StudioInfo {
 }
 
 export const DEFAULT_STUDIO_INFO: StudioInfo = {
-  phone: '+39 340 000 0000',
-  whatsappNumber: '393400000000',
-  address: 'Via Roma, 12, Milano (o su appuntamento)',
-  homeVisits: 'Milano e zone limitrofe su richiesta',
+  phone: '+39 347 653 8494',
+  whatsappNumber: '393476538494',
+  address: 'Roma (zona Villa Bonelli)',
+  homeVisits: 'Roma e zone limitrofe su richiesta',
   hours: 'Lun – Sab: 09:00 – 20:00 (su prenotazione)',
   priceStudio: '45 € – 50 €',
   priceHome: '60 € – 65 €',

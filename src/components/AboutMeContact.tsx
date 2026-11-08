@@ -161,9 +161,15 @@ export const AboutMeContact: React.FC<AboutMeContactProps> = ({
                 <Phone className="w-5 h-5" />
               </div>
               <h4 className="text-xs uppercase tracking-wider text-stone-500 font-bold">WhatsApp / Telefono</h4>
-              <p className="text-sm font-semibold text-stone-800 leading-snug">
-                {studioInfo.phone}
-              </p>
+              <a 
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-semibold text-[#2D4334] hover:text-[#1E824C] hover:underline flex items-center gap-1.5 transition-colors"
+                title="Clicca per aprire la chat WhatsApp"
+              >
+                <span>{studioInfo.phone}</span>
+              </a>
             </div>
 
             {/* Orari */}

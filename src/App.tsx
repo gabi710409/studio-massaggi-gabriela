@@ -14,7 +14,20 @@ export default function App() {
   const [studioInfo, setStudioInfo] = useState<StudioInfo>(() => {
     try {
       const saved = localStorage.getItem('gabriela_studio_info');
-      return saved ? JSON.parse(saved) : DEFAULT_STUDIO_INFO;
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (!parsed.whatsappNumber || parsed.whatsappNumber === '393400000000') {
+          parsed.whatsappNumber = DEFAULT_STUDIO_INFO.whatsappNumber;
+          parsed.phone = DEFAULT_STUDIO_INFO.phone;
+        }
+        if (!parsed.address || parsed.address.includes('Milano')) {
+          parsed.address = DEFAULT_STUDIO_INFO.address;
+          parsed.homeVisits = DEFAULT_STUDIO_INFO.homeVisits;
+        }
+        localStorage.setItem('gabriela_studio_info', JSON.stringify(parsed));
+        return parsed;
+      }
+      return DEFAULT_STUDIO_INFO;
     } catch {
       return DEFAULT_STUDIO_INFO;
     }
