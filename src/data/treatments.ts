@@ -113,7 +113,7 @@ export const DEFAULT_STUDIO_INFO: StudioInfo = {
   whatsappNumber: '393476538494',
   address: 'Roma (zona Villa Bonelli)',
   homeVisits: 'Roma',
-  hours: 'Lun – Sab: 09:00 – 20:00 (su prenotazione)',
+  hours: 'Da concordare',
   priceStudio: '45 € – 50 €',
   priceHome: '60 € – 65 €',
 };

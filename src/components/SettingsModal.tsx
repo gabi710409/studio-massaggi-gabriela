@@ -115,7 +115,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               type="text"
               value={formData.hours}
               onChange={(e) => setFormData({...formData, hours: e.target.value})}
-              placeholder="Es. Lunedì - Sabato: 09:00 - 20:00 (su prenotazione)"
+              placeholder="Es. Da concordare"
               className="w-full px-3 py-2 text-sm rounded-lg border border-stone-300 focus:ring-2 focus:ring-[#5A7862] bg-white"
             />
           </div>

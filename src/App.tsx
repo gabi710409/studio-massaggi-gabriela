@@ -26,6 +26,9 @@ export default function App() {
         if (!parsed.homeVisits || parsed.homeVisits.includes('Milano') || parsed.homeVisits.includes('limitrofe')) {
           parsed.homeVisits = DEFAULT_STUDIO_INFO.homeVisits;
         }
+        if (!parsed.hours || parsed.hours.includes('Lun') || parsed.hours.includes('09:00')) {
+          parsed.hours = DEFAULT_STUDIO_INFO.hours;
+        }
         localStorage.setItem('gabriela_studio_info', JSON.stringify(parsed));
         return parsed;
       }
