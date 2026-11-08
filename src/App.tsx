@@ -14,27 +14,30 @@ export default function App() {
     try {
       const saved = localStorage.getItem('gabriela_studio_info');
       if (saved) {
-        const parsed = JSON.parse(saved);
-        if (!parsed.whatsappNumber || parsed.whatsappNumber === '393400000000') {
-          parsed.whatsappNumber = DEFAULT_STUDIO_INFO.whatsappNumber;
-          parsed.phone = DEFAULT_STUDIO_INFO.phone;
+        const raw = JSON.parse(saved);
+        if (raw && typeof raw === 'object') {
+          const parsed: StudioInfo = { ...DEFAULT_STUDIO_INFO, ...raw };
+          if (!parsed.whatsappNumber || parsed.whatsappNumber === '393400000000') {
+            parsed.whatsappNumber = DEFAULT_STUDIO_INFO.whatsappNumber;
+            parsed.phone = DEFAULT_STUDIO_INFO.phone;
+          }
+          if (!parsed.address || (typeof parsed.address === 'string' && parsed.address.includes('Milano'))) {
+            parsed.address = DEFAULT_STUDIO_INFO.address;
+          }
+          if (!parsed.homeVisits || (typeof parsed.homeVisits === 'string' && (parsed.homeVisits.includes('Milano') || parsed.homeVisits.includes('limitrofe')))) {
+            parsed.homeVisits = DEFAULT_STUDIO_INFO.homeVisits;
+          }
+          if (!parsed.hours || (typeof parsed.hours === 'string' && (parsed.hours.includes('Lun') || parsed.hours.includes('09:00')))) {
+            parsed.hours = DEFAULT_STUDIO_INFO.hours;
+          }
+          localStorage.setItem('gabriela_studio_info', JSON.stringify(parsed));
+          return parsed;
         }
-        if (!parsed.address || parsed.address.includes('Milano')) {
-          parsed.address = DEFAULT_STUDIO_INFO.address;
-        }
-        if (!parsed.homeVisits || parsed.homeVisits.includes('Milano') || parsed.homeVisits.includes('limitrofe')) {
-          parsed.homeVisits = DEFAULT_STUDIO_INFO.homeVisits;
-        }
-        if (!parsed.hours || parsed.hours.includes('Lun') || parsed.hours.includes('09:00')) {
-          parsed.hours = DEFAULT_STUDIO_INFO.hours;
-        }
-        localStorage.setItem('gabriela_studio_info', JSON.stringify(parsed));
-        return parsed;
       }
-      return DEFAULT_STUDIO_INFO;
-    } catch {
-      return DEFAULT_STUDIO_INFO;
+    } catch (e) {
+      console.warn('Fallback to DEFAULT_STUDIO_INFO:', e);
     }
+    return DEFAULT_STUDIO_INFO;
   });
 
   const [activeSection, setActiveSection] = useState<string>('home');
