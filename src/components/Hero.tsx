@@ -10,7 +10,7 @@ import {
   CheckCircle2
 } from 'lucide-react';
 import { StudioInfo } from '../data/treatments';
-import heroImage from '../assets/images/hero_female_massage_1793910148106.jpg';
+import heroImage from '../assets/images/hero_studio_decor_1794163132556.jpg';
 
 interface HeroProps {
   studioInfo: StudioInfo;
