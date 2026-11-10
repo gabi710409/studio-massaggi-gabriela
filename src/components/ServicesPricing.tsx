@@ -14,7 +14,8 @@ import {
   Compass, 
   HeartHandshake,
   ArrowRight,
-  ShieldAlert
+  ShieldAlert,
+  ShieldCheck
 } from 'lucide-react';
 
 interface ServicesPricingProps {
@@ -217,9 +218,15 @@ export const ServicesPricing: React.FC<ServicesPricingProps> = ({
                 </span>
               </div>
               <div>
-                <h4 className="text-lg font-bold text-stone-900">Trattamento a Domicilio</h4>
+                <div className="flex flex-wrap items-center gap-2 mb-1">
+                  <h4 className="text-lg font-bold text-stone-900">Trattamento a Domicilio</h4>
+                  <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#EBF3ED] text-[#2F4A37] border border-[#CDE1D3] text-[11px] font-semibold">
+                    <ShieldCheck className="w-3 h-3 text-[#4E6B56]" />
+                    Riservato ai già clienti
+                  </span>
+                </div>
                 <p className="text-xs text-stone-500 mt-0.5">
-                  Tutto l'occorrente portato comodamente presso la tua abitazione.
+                  Tutto l'occorrente portato comodamente presso la tua abitazione a Roma.
                 </p>
               </div>
               <div className="pt-2">
@@ -228,12 +235,16 @@ export const ServicesPricing: React.FC<ServicesPricingProps> = ({
                 </span>
               </div>
               <ul className="text-xs text-stone-600 space-y-2 pt-2 border-t border-stone-100">
+                <li className="flex items-start gap-2 text-[#2A3B2E] font-medium">
+                  <Check className="w-4 h-4 text-[#5A7862] shrink-0 mt-0.5" />
+                  <span><strong>Requisito:</strong> Servizio riservato a chi ha già effettuato almeno una seduta conoscitiva in studio</span>
+                </li>
                 <li className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-[#5A7862]" />
+                  <Check className="w-4 h-4 text-[#5A7862] shrink-0" />
                   <span>Lettino professionale pieghevole e teli sterili</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-[#5A7862]" />
+                  <Check className="w-4 h-4 text-[#5A7862] shrink-0" />
                   <span>Nessun traffico o stress post-massaggio</span>
                 </li>
               </ul>

@@ -87,7 +87,7 @@ export const Hero: React.FC<HeroProps> = ({ studioInfo, onOpenAnamnesis }) => {
               </div>
               <div className="flex items-center gap-2 text-xs sm:text-sm text-[#46574D]">
                 <CheckCircle2 className="w-4 h-4 text-[#5A7862] shrink-0" />
-                <span>A Domicilio ({studioInfo.priceHome})</span>
+                <span>A Domicilio ({studioInfo.priceHome} • <span className="text-[#3D5643] font-semibold">già clienti</span>)</span>
               </div>
               <div className="flex items-center gap-2 text-xs sm:text-sm text-[#46574D] col-span-2 sm:col-span-1">
                 <CheckCircle2 className="w-4 h-4 text-[#5A7862] shrink-0" />

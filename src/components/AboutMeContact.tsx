@@ -151,8 +151,11 @@ export const AboutMeContact: React.FC<AboutMeContactProps> = ({
               </div>
               <h4 className="text-xs uppercase tracking-wider text-stone-500 font-bold">Domicilio</h4>
               <p className="text-sm font-semibold text-stone-800 leading-snug">
-                {studioInfo.homeVisits}
+                Roma
               </p>
+              <span className="inline-block px-2 py-0.5 rounded-md bg-[#E8EFE9] text-[#2C4132] text-[11px] font-semibold">
+                Riservato ai già clienti dello studio
+              </span>
             </div>
 
             {/* WhatsApp / Telefono */}

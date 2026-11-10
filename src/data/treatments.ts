@@ -112,7 +112,7 @@ export const DEFAULT_STUDIO_INFO: StudioInfo = {
   phone: '+39 347 653 8494',
   whatsappNumber: '393476538494',
   address: 'Roma (zona Villa Bonelli)',
-  homeVisits: 'Roma',
+  homeVisits: 'Roma (riservato ai già clienti dello studio)',
   hours: 'Da concordare',
   priceStudio: '45 € – 50 €',
   priceHome: '60 € – 65 €',

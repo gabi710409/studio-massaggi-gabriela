@@ -24,7 +24,7 @@ export default function App() {
           if (!parsed.address || (typeof parsed.address === 'string' && parsed.address.includes('Milano'))) {
             parsed.address = DEFAULT_STUDIO_INFO.address;
           }
-          if (!parsed.homeVisits || (typeof parsed.homeVisits === 'string' && (parsed.homeVisits.includes('Milano') || parsed.homeVisits.includes('limitrofe')))) {
+          if (!parsed.homeVisits || (typeof parsed.homeVisits === 'string' && (parsed.homeVisits.includes('Milano') || parsed.homeVisits.includes('limitrofe') || !parsed.homeVisits.includes('già')))) {
             parsed.homeVisits = DEFAULT_STUDIO_INFO.homeVisits;
           }
           if (!parsed.hours || (typeof parsed.hours === 'string' && (parsed.hours.includes('Lun') || parsed.hours.includes('09:00')))) {
