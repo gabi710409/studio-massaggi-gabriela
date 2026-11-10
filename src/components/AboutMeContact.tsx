@@ -12,6 +12,7 @@ import {
   Edit3
 } from 'lucide-react';
 import { StudioInfo } from '../data/treatments';
+import gabrielaPhoto from '../assets/images/gabriela_attestato_professionale.jpg';
 
 interface AboutMeContactProps {
   studioInfo: StudioInfo;
@@ -39,11 +40,11 @@ export const AboutMeContact: React.FC<AboutMeContactProps> = ({
           <div className="lg:col-span-5 relative order-2 lg:order-1">
             <div className="relative mx-auto max-w-sm sm:max-w-md">
               <div className="absolute -inset-3 rounded-3xl bg-[#DCE7DF] -rotate-1 -z-10" />
-              <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white aspect-[4/5] bg-stone-100">
+              <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white aspect-[3/4] sm:aspect-[4/5] bg-stone-100">
                 <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
-                  alt="Gabriela operatrice olistica e massoterapista"
-                  className="w-full h-full object-cover object-top"
+                  src={gabrielaPhoto}
+                  alt="Gabriela operatrice olistica con attestato di formazione professionale"
+                  className="w-full h-full object-cover object-[center_25%]"
                 />
               </div>
 
